@@ -1,0 +1,45 @@
+.home {
+  width: 100%;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-container {
+  width: 80%;
+  height: 14rem;
+  position: relative;
+  right: 10px;
+  background-image: url(../../assets/images/herostock3_1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: grayscale(100%);
+}
+
+.hero-banner {
+  font-size: 18px;
+  color: rgb(112, 47, 112);
+  letter-spacing: 3px;
+  font-weight: bold;
+  padding: 1rem;
+  text-shadow: 1px 3px 3px grey;
+}
+
+.hero-shape {
+  position: relative;
+  bottom: 45px;
+  left: 20px;
+  height: 12rem;
+  width: 75%;
+  background-color: rgb(112, 47, 112);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  color: aliceblue;
+}
