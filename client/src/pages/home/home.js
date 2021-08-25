@@ -8,14 +8,24 @@ export default function home() {
   return (
     <div className="home">
       <section className="hero-section">
-        <video loop={true} autoPlay="autoPlay" muted id="background__video">
-          <source src={Video} type="video/mp4" />
-        </video>
+        <div className="box">
+          <video
+            loop={true}
+            autoPlay="autoPlay"
+            muted
+            className="background__video"
+          >
+            <source src={Video} type="video/mp4" />
+          </video>
+        </div>
+
         <div className="hero-banner">
           <h1>Design with you in mind</h1>
-          <h3>Online Presence Creation</h3>
+          <br />
+          <h3>Web Presence Creation</h3>
           <p>&</p>
-          <h3>Reliable Solutions</h3>
+          <h3>Reliable</h3>
+          <h3> Web Development Solutions</h3>
         </div>
         <div className="hero-container" alt="person infront of computer"></div>
         <div className="hero-shape">
@@ -40,11 +50,74 @@ export default function home() {
         <div className="hero-shape2">
           <h2>Questions? </h2>
           <h2>Want to get in touch?</h2>
-          <p>Contact Us!</p>
           <br />
+          <p>Contact Us!</p>
           <Link to="/contact-us#contact-us-form">
-            <div className="contact-button">Get in Touch</div>
+            <div className="contact-button">
+              <p>Get in Touch</p>
+            </div>
           </Link>
+        </div>
+        <div className="section2">
+          <div className="hero-container3">
+            <p>Take all the hassle out of </p>
+          </div>
+          <div className="hero-shape3">
+            <h2>Web Design and Development</h2>
+          </div>
+          <div className="hero-shape4">
+            <h2>Frontend</h2>
+            <br />
+            <p>
+              My experience includes vanilla javascript, HTML, CSS, SASS, Babel,
+              React. Using tools such as Bootstrap and Material UI; I can create
+              High fidelity designs covering all levels of responsiveness.
+            </p>
+          </div>
+          <div className="hero-container4"></div>
+          <div className="hero-shape5">
+            <h2>Frameworks</h2>
+            <br />
+            <p>
+              Working with the most reliable systems currenly in the market;
+              NodeJS and SQL databases. These are optimized for multiple
+              situations for uninterrupted deployment with real-time
+              applications available on demand using MVC-like architecture. CRUD
+              based APIs for a variety of situations.
+            </p>
+          </div>
+          <div className="hero-shape6">
+            <h2>API Application</h2>
+            <br />
+            <p>
+              If it's building graphs for your customer to review or advertising
+              real-time analytics with your team accross the globe. API creation
+              and implementation are possible.
+              <ul className="list">
+                <li>Analytics</li>
+                <li>Accounting</li>
+                <li>Booking</li>
+                <li>Affiliate Marketing</li>
+                <li>Weather</li>
+                <li>Maps</li>
+                <li>Payment Processing</li>
+                <li>Lead Tracking</li>
+                <li>Social Media</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div className="section3">
+          <h1>Expand </h1>
+          <h2> Your Business</h2>
+          <br />
+          <br />
+          <p>
+            We can Build reliable font-end and Back-end technology for making
+            custom web applications for revenue generation or improve the
+            efficiency of web applications. Using the latest in innovative and
+            functional technology.
+          </p>
         </div>
       </section>
     </div>

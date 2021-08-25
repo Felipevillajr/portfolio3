@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 5rem;
+  margin-top: 0.1rem;
   padding: 5rem 1rem;
   display: flex;
   justify-content: flex-start;
@@ -10,7 +10,7 @@
 .legalise {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid #dce1de;
+  border-top: 1px solid black;
 }
 
 .img_insta {
@@ -19,4 +19,9 @@
 
 .img_email {
   width: 2rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-around;
 }
