@@ -34,8 +34,8 @@ export default function home() {
           <p>
             Bring cyberspace to your business and enpower yourself to focus on
             growth. My goal is to provide full individualized service and
-            support for and and all web based technical needs. So you can
-            generate more revenue for your business.{" "}
+            support for all web based technical needs. So you can generate more
+            revenue for your business.{" "}
           </p>
         </div>
         <Link to="/learn-more">
