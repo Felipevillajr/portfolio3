@@ -1,6 +1,6 @@
 .footer {
   margin-top: 0.1rem;
-  padding: 5rem 1rem;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -21,7 +21,17 @@
   width: 2rem;
 }
 
+.contact-info {
+  border-top: 1px solid black;
+  padding-top: 2rem;
+  display: flex;
+}
+
 .footer-social {
   display: flex;
   justify-content: space-around;
+}
+
+.contact-info-left {
+  width: 50%;
 }

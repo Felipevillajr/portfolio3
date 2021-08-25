@@ -24,7 +24,7 @@ export default function header() {
           <div className="dropdown-content">
             <Link to="/">Home</Link>
             <Link to="/Portfolio">Portfolio</Link>
-            <Link to="/learn-more">Learn More</Link>
+            <Link to="/about">Learn More</Link>
           </div>
         </div>
       </section>

@@ -43,6 +43,10 @@
   background-image: url(../../assets/images/pizza_menu_open.png);
 }
 
+.menu__icon:active {
+  background-image: url(../../assets/images/pizza_menu.png);
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -75,6 +79,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.dropdown:not(:hover) .dropdown-content {
+  display: none;
 }
 
 .dropbtn {
