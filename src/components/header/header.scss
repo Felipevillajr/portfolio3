@@ -1,18 +1,41 @@
-.header {
-  position: relative;
-  width: 100%;
-  height: 3rem;
-  background-color: rgb(112, 47, 112);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 200px;
-  font-weight: 600;
+@import "../../partials/partials.scss";
+@import "../../partials/colors.scss";
 
-  &__rightside {
-    width: 47%;
+.header {
+  @include mobile {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    background-color: $primary_color;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    font-weight: 600;
+
+    &__rightside {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @include tablet {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    background-color: $primary_color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    font-weight: 600;
+    color: $primary_color;
+
+    &__rightside {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -26,77 +49,8 @@
 }
 
 .menu {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-}
-.menu__icon {
-  background-image: url(../../assets/images/pizza_menu.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  width: 3rem;
-  height: 3rem;
-}
-
-.menu__icon:hover {
-  background-image: url(../../assets/images/pizza_menu_open.png);
-}
-
-.menu__icon:active {
-  background-image: url(../../assets/images/pizza_menu.png);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0px;
-  z-index: 1;
-  background-color: rgb(112, 47, 112);
-  font-size: 1rem;
-  height: 8rem;
-  width: 6rem;
-  border-radius: 2%;
-}
-
-.dropdown-content a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #dce1de;
-}
-
-.dropdown-content a:hover {
-  color: #9cc5a1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.dropdown:not(:hover) .dropdown-content {
-  display: none;
-}
-
-.dropbtn {
-  border: none;
-  color: #dce1de;
-  font-weight: bold;
-  padding: 0px;
-  font-size: 2rem;
-}
-
-.menu__icon-open {
-  display: none;
-}
-
-.menu__icon-open:hover {
-  display: inline-block;
+  justify-content: space-between;
+  padding: 0rem 1rem;
 }

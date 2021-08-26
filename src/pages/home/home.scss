@@ -1,74 +1,137 @@
+@import "../../partials/partials.scss";
+@import "../../partials/colors.scss";
+
 .home {
   width: 100%;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .box {
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
+  @include mobile {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  @include tablet {
+    display: flex;
+  }
 }
 
 .background__video {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  filter: grayscale(60%);
-  z-index: -1;
+  @include mobile {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: grayscale(60%);
+    z-index: -1;
+  }
+  @include tablet {
+    width: 50%;
+    filter: blur(3px);
+    filter: grayscale(60%);
+  }
 }
 
 .hero-banner {
-  margin-top: -1rem;
-  font-size: 26px;
-  margin-bottom: 5rem;
-  color: #ffffff;
-  letter-spacing: 3px;
-  font-weight: bold;
-  padding: 2rem;
-  text-shadow: 2px 2px 3px rgba(79, 85, 48, 0.849);
-  background-color: rgb(112, 47, 112);
+  @include mobile {
+    margin-top: -1rem;
+    font-size: 26px;
+    margin-bottom: 5rem;
+    color: $p_text;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 2rem;
+    text-shadow: 2px 2px 3px rgba(79, 85, 48, 0.849);
+    background-color: $primary_color;
+  }
+  @include tablet {
+    font-size: 22px;
+    background-color: $secondary_color;
+    color: $primary_color;
+    padding: 2rem;
+  }
+}
+
+.section {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+  }
 }
 
 .hero-container {
-  width: 80%;
-  height: 14rem;
-  position: relative;
-  right: 10px;
-  background-image: url(../../assets/images/herostock3_1.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  filter: grayscale(60%);
-  border-radius: 4px;
+  @include mobile {
+    width: 80%;
+    height: 14rem;
+    position: relative;
+    right: 10px;
+    background-image: url(../../assets/images/herostock3_1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(60%);
+    border-radius: 4px;
+  }
+  @include tablet {
+    background-image: url(../../assets/images/herostock3_1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15rem;
+  }
 }
 
 .hero-shape {
-  position: relative;
-  bottom: 6rem;
-  left: 20px;
-  height: 18rem;
-  width: 75%;
-  background-color: rgb(112, 47, 112);
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 1rem;
-  color: #dce1de;
-  border-radius: 4px;
-  text-shadow: 2px 2px 3px rgba(79, 85, 48, 0.849);
+  @include mobile {
+    position: relative;
+    bottom: 6rem;
+    left: 20px;
+    height: 18rem;
+    width: 75%;
+    background-color: $primary_color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    color: $h1_text;
+    border-radius: 4px;
+    text-shadow: 2px 2px 3px rgba(79, 85, 48, 0.849);
+  }
+  @include tablet {
+    position: relative;
+    bottom: 2rem;
+    left: 20px;
+    height: 20rem;
+    width: 25%;
+    background-color: $secondary_color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    color: $primary_color;
+    border-radius: 4px;
+    text-shadow: 2px 2px 3px rgba(79, 85, 48, 0.849);
+  }
 }
 
-.hero-arrow {
-  height: 5rem;
-}
+// .hero-arrow {
+//   height: 5rem;
+// }
 
 .learnmore {
   display: flex;
@@ -83,20 +146,34 @@
 }
 
 .hero-container2 {
-  background-image: url(../../assets/images/herostock4_1.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  filter: grayscale(60%);
-  height: 10rem;
-  width: 75%;
-  left: 1rem;
-  top: 1rem;
-  position: relative;
-  border-radius: 4px;
+  @include mobile {
+    background-image: url(../../assets/images/herostock4_1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(60%);
+    height: 10rem;
+    width: 75%;
+    left: 1rem;
+    top: 1rem;
+    position: relative;
+    border-radius: 4px;
+  }
+
+  @include tablet {
+    background-image: url(../../assets/images/herostock4_1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(60%);
+    height: 10rem;
+    left: 1rem;
+    top: 1rem;
+    position: relative;
+    border-radius: 4px;
+  }
 }
 
 .hero-shape2 {
-  background-color: rgb(112, 47, 112);
+  background-color: $primary_color;
   height: 11rem;
   width: 75%;
   position: relative;
@@ -107,7 +184,7 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 1rem;
-  color: #dce1de;
+  color: $h1_text;
   border-radius: 4px;
   text-shadow: 2px 2px 3px rgba(79, 85, 48, 0.438);
 }
@@ -118,7 +195,7 @@
   padding: 1rem;
   border: none;
   border-radius: 50%;
-  background-color: #dce1de;
+  background-color: $primary_color;
   font-size: 0.8rem;
   text-align: center;
   display: flex;
@@ -131,7 +208,7 @@
 
 .section2 {
   margin-top: 2rem;
-  background-color: rgb(112, 47, 112);
+  background-color: $secondary_color;
   width: 100%;
   height: 200vh;
   box-sizing: border-box;
@@ -139,6 +216,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: $p_text;
 }
 
 .hero-container3 {
@@ -154,14 +232,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: #dce1de;
+  color: $primary_color;
   padding: 1rem;
   font-weight: bold;
   border-radius: 4px;
 }
 
 .hero-shape3 {
-  background-color: #dce1de;
+  background-color: $primary_color;
   height: 6rem;
   width: 75%;
   bottom: 2rem;
@@ -173,9 +251,9 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 1rem;
-  color: rgb(112, 47, 112);
+  color: $h1_text;
   border-radius: 4px;
-  text-shadow: 2px 2px 3px rgba(112, 47, 112, 0.486);
+  text-shadow: 2px 2px 3px grey;
 }
 
 .hero-container4 {
@@ -192,7 +270,7 @@
 }
 
 .hero-shape4 {
-  background-color: #dce1de;
+  background-color: $primary_color;
   height: 11rem;
   width: 75%;
   position: relative;
@@ -203,13 +281,13 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 1rem;
-  color: rgb(112, 47, 112);
+  color: $h1_text;
   border-radius: 4px;
 }
 
 .hero-shape5 {
   margin-top: -1rem;
-  background-color: #dce1de;
+  background-color: $primary_color;
   height: 14rem;
   width: 75%;
   position: relative;
@@ -220,13 +298,13 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 1rem;
-  color: rgb(112, 47, 112);
+  color: $h1_text;
   border-radius: 4px;
 }
 
 .hero-shape6 {
   margin-top: 2rem;
-  background-color: #dce1de;
+  background-color: $primary_color;
   height: 20rem;
   width: 75%;
   position: relative;
@@ -237,7 +315,7 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 1.5rem;
-  color: rgb(112, 47, 112);
+  color: $h1_text;
   border-radius: 4px;
 }
 
@@ -255,7 +333,7 @@
   flex-direction: column;
   text-align: center;
   padding: 3rem;
-  color: rgb(112, 47, 112);
-  background-color: #dce1de;
+  color: $h1_text;
+  background-color: $primary_color;
   font-weight: bold;
 }
